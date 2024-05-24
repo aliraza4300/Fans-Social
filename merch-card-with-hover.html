@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
+    <link rel="stylesheet" href="https://fs.codelinden.com/wp-content/plugins/fansocial/assets/new-profile/theme.css" />
+    <link rel="stylesheet" href="https://fs.codelinden.com/wp-content/plugins/fansocial/assets/new-profile/main.css" />
+    <link rel="stylesheet"
+        href="https://fs.codelinden.com/wp-content/plugins/fansocial/assets/new-profile/customTachyons.css" />
+    <link rel="stylesheet"
+        href="https://fs.codelinden.com/wp-content/plugins/fansocial/assets/new-profile/profilePage.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        rel="stylesheet">
+    <title>Merch</title>
+    <style>
+        /* Text shadow class */
+        .text--sh--10 {
+            text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.10);
+        }
+
+        /* Width of 324px converted to rem */
+        .w--324 {
+            width: 20.25rem;
+        }
+
+        /* Height of 324px converted to rem */
+        .h--324 {
+            height: 20.25rem;
+        }
+
+        /* Height of 22px converted to rem */
+        .h--22 {
+            height: 1.375rem;
+        }
+
+        /* Gradient overlay for images */
+        .gradient-overlay {
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, black 100%);
+        }
+
+        /* Poppins font family */
+        .font--poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* PRODUCT card  */
+        .common_elm_tqbfUg {
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* PRODUCT card  Hover*/
+        .common_elm_tqbfUg:hover {
+            transform: scale(1.2);
+        }
+
+        /* IMAGES container, Hide all images except the first one */
+        .common_elm_JBZPVx img:not(:first-child) {
+            display: none;
+        }
+
+        /* Description Text  */
+        .elm_wPoVWE {
+            display: none
+        }
+
+        /* Description Text show on Product card hover */
+        .common_elm_tqbfUg:hover .elm_wPoVWE {
+            display: block
+        }
+    </style>
+</head>
+
+<body class="bg-dark-gray pa4 ma0 font--poppins">
+    <div class="gap--32 flex flex-wrap justify-center pa4 min-vh-100 bg-black-30 bg--blur--200 ">
+        <div class="relative w--324 h--324 flex flex-column justify-between items-end common_elm_tqbfUg">
+            <div class="common_elm_JBZPVx w-100 h-100">
+                <img src="./imgs/man.jpeg" alt="Product Image 1" class="w-100 h-100 contain" />
+                <img src="./imgs/man2.avif" alt="Product Image 2" class="w-100 h-100 contain" />
+                <img src="./imgs/man3.avif" alt="Product Image 3" class="w-100 h-100 contain" />
+                <img src="./imgs/man4.jpeg" alt="Product Image 4" class="w-100 h-100 contain" />
+                <!-- Add more images as needed -->
+            </div>
+            <div class="w-100 h-100 gradient--image flex flex-column justify-between absolute">
+                <div
+                    class="self-end h--22 bg--light-warm-green flex items-center justify-center pa2 black f6 fw5 line-height-18 gap--6">
+                    10% off
+                </div>
+                <div class="self-start pa3">
+                    <p class="ma0 text--sh--10 f5 fw6 lh--30 fs--20 col--wild-sand-grey">
+                        Tank top (black)
+                    </p>
+                    <div class="flex flex-column">
+                        <div class="flex items-center ">
+                            <p class="text--sh--10 ma0 fw6 fs--18 lh--28 col--wild-sand-grey">
+                                USD $25
+                            </p>
+                            <p class="ma0 ml2 strike text--sh--10 fw6 fs--18 lh--28 col--wild-sand-grey">$15</p>
+                        </div>
+
+                        <p class="ma0 text--sh--10 col--light-warm-green hidden fs--14 lh--normal elm_wPoVWE">
+                            Get Jenny’s favourite Mangoes! Buy them while supply last !Get Jenny’s favourite Mangoes!
+                            Buy them while supply last !Get Jenny’s favourite Mangoes! Buy them while supply last !
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative w--324 h--324 flex flex-column justify-between items-end common_elm_tqbfUg">
+            <div class="common_elm_JBZPVx w-100 h-100">
+                <img src="./imgs/man.jpeg" alt="Product Image 1" class="w-100 h-100 contain" />
+                <img src="./imgs/man2.avif" alt="Product Image 2" class="w-100 h-100 contain" />
+                <img src="./imgs/man3.avif" alt="Product Image 3" class="w-100 h-100 contain" />
+                <img src="./imgs/man4.jpeg" alt="Product Image 4" class="w-100 h-100 contain" />
+                <!-- Add more images as needed -->
+            </div>
+            <div class="w-100 h-100 gradient--image flex flex-column justify-between absolute">
+                <div
+                    class="self-end h--22 bg--light-warm-green flex items-center justify-center pa2 black f6 fw5 line-height-18 gap--6">
+                    10% off
+                </div>
+                <div class="self-start pa3">
+                    <p class="ma0 text--sh--10 f5 fw6 lh--30 fs--20 col--wild-sand-grey">
+                        Tank top (black)
+                    </p>
+                    <div class="flex flex-column">
+                        <div class="flex items-center ">
+                            <p class="text--sh--10 ma0 fw6 fs--18 lh--28 col--wild-sand-grey">
+                                USD $25
+                            </p>
+                            <p class="ma0 ml2 strike text--sh--10 fw6 fs--18 lh--28 col--wild-sand-grey">$15</p>
+                        </div>
+
+                        <p class="ma0 text--sh--10 col--light-warm-green hidden fs--14 lh--normal elm_wPoVWE">
+                            Get Jenny’s favourite Mangoes! Buy them while supply last !Get Jenny’s favourite Mangoes!
+                            Buy them while supply last !Get Jenny’s favourite Mangoes! Buy them while supply last !
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative w--324 h--324 flex flex-column justify-between items-end common_elm_tqbfUg">
+            <div class="common_elm_JBZPVx w-100 h-100">
+                <img src="./imgs/man.jpeg" alt="Product Image 1" class="w-100 h-100 contain" />
+                <img src="./imgs/man2.avif" alt="Product Image 2" class="w-100 h-100 contain" />
+                <img src="./imgs/man3.avif" alt="Product Image 3" class="w-100 h-100 contain" />
+                <img src="./imgs/man4.jpeg" alt="Product Image 4" class="w-100 h-100 contain" />
+                <!-- Add more images as needed -->
+            </div>
+            <div class="w-100 h-100 gradient--image flex flex-column justify-between absolute">
+                <div
+                    class="self-end h--22 bg--light-warm-green flex items-center justify-center pa2 black f6 fw5 line-height-18 gap--6">
+                    10% off
+                </div>
+                <div class="self-start pa3">
+                    <p class="ma0 text--sh--10 f5 fw6 lh--30 fs--20 col--wild-sand-grey">
+                        Tank top (black)
+                    </p>
+                    <div class="flex flex-column">
+                        <div class="flex items-center ">
+                            <p class="text--sh--10 ma0 fw6 fs--18 lh--28 col--wild-sand-grey">
+                                USD $25
+                            </p>
+                            <p class="ma0 ml2 strike text--sh--10 fw6 fs--18 lh--28 col--wild-sand-grey">$15</p>
+                        </div>
+
+                        <p class="ma0 text--sh--10 col--light-warm-green hidden fs--14 lh--normal elm_wPoVWE">
+                            Get Jenny’s favourite Mangoes! Buy them while supply last !Get Jenny’s favourite Mangoes!
+                            Buy them while supply last !Get Jenny’s favourite Mangoes! Buy them while supply last !
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative w--324 h--324 flex flex-column justify-between items-end common_elm_tqbfUg">
+            <div class="common_elm_JBZPVx w-100 h-100">
+                <img src="./imgs/man.jpeg" alt="Product Image 1" class="w-100 h-100 contain" />
+                <img src="./imgs/man2.avif" alt="Product Image 2" class="w-100 h-100 contain" />
+                <img src="./imgs/man3.avif" alt="Product Image 3" class="w-100 h-100 contain" />
+                <img src="./imgs/man4.jpeg" alt="Product Image 4" class="w-100 h-100 contain" />
+                <!-- Add more images as needed -->
+            </div>
+            <div class="w-100 h-100 gradient--image flex flex-column justify-between absolute">
+                <div
+                    class="self-end h--22 bg--light-warm-green flex items-center justify-center pa2 black f6 fw5 line-height-18 gap--6">
+                    10% off
+                </div>
+                <div class="self-start pa3">
+                    <p class="ma0 text--sh--10 f5 fw6 lh--30 fs--20 col--wild-sand-grey">
+                        Tank top (black)
+                    </p>
+                    <div class="flex flex-column">
+                        <div class="flex items-center ">
+                            <p class="text--sh--10 ma0 fw6 fs--18 lh--28 col--wild-sand-grey">
+                                USD $25
+                            </p>
+                            <p class="ma0 ml2 strike text--sh--10 fw6 fs--18 lh--28 col--wild-sand-grey">$15</p>
+                        </div>
+
+                        <p class="ma0 text--sh--10 col--light-warm-green hidden fs--14 lh--normal elm_wPoVWE">
+                            Get Jenny’s favourite Mangoes! Buy them while supply last !Get Jenny’s favourite Mangoes!
+                            Buy them while supply last !Get Jenny’s favourite Mangoes! Buy them while supply last !
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative w--324 h--324 flex flex-column justify-between items-end common_elm_tqbfUg">
+            <div class="common_elm_JBZPVx w-100 h-100">
+                <img src="./imgs/man.jpeg" alt="Product Image 1" class="w-100 h-100 contain" />
+                <img src="./imgs/man2.avif" alt="Product Image 2" class="w-100 h-100 contain" />
+                <img src="./imgs/man3.avif" alt="Product Image 3" class="w-100 h-100 contain" />
+                <img src="./imgs/man4.jpeg" alt="Product Image 4" class="w-100 h-100 contain" />
+                <!-- Add more images as needed -->
+            </div>
+            <div class="w-100 h-100 gradient--image flex flex-column justify-between absolute">
+                <div
+                    class="self-end h--22 bg--light-warm-green flex items-center justify-center pa2 black f6 fw5 line-height-18 gap--6">
+                    10% off
+                </div>
+                <div class="self-start pa3">
+                    <p class="ma0 text--sh--10 f5 fw6 lh--30 fs--20 col--wild-sand-grey">
+                        Tank top (black)
+                    </p>
+                    <div class="flex flex-column">
+                        <div class="flex items-center ">
+                            <p class="text--sh--10 ma0 fw6 fs--18 lh--28 col--wild-sand-grey">
+                                USD $25
+                            </p>
+                            <p class="ma0 ml2 strike text--sh--10 fw6 fs--18 lh--28 col--wild-sand-grey">$15</p>
+                        </div>
+
+                        <p class="ma0 text--sh--10 col--light-warm-green hidden fs--14 lh--normal elm_wPoVWE">
+                            Get Jenny’s favourite Mangoes! Buy them while supply last !Get Jenny’s favourite Mangoes!
+                            Buy them while supply last !Get Jenny’s favourite Mangoes! Buy them while supply last !
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat for other product cards -->
+    </div>
+
+    <script>
+        document.querySelectorAll('.common_elm_tqbfUg').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                const images = card.querySelectorAll('.common_elm_JBZPVx img');
+                let currentIndex = 0;
+
+                images[currentIndex].style.display = 'block';
+
+                const interval = setInterval(() => {
+                    images[currentIndex].style.display = 'none';
+                    currentIndex = (currentIndex + 1) % images.length;
+                    images[currentIndex].style.display = 'block';
+                }, 1000);
+
+                card.addEventListener('mouseleave', () => {
+                    clearInterval(interval);
+                    images.forEach((img, index) => {
+                        img.style.display = index === 0 ? 'block' : 'none';
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
