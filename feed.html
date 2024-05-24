@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
+    <link rel="stylesheet" href="https://fs.codelinden.com/wp-content/plugins/fansocial/assets/new-profile/theme.css" />
+    <link rel="stylesheet" href="https://fs.codelinden.com/wp-content/plugins/fansocial/assets/new-profile/main.css" />
+    <link rel="stylesheet"
+        href="https://fs.codelinden.com/wp-content/plugins/fansocial/assets/new-profile/customTachyons.css" />
+    <link rel="stylesheet"
+        href="https://fs.codelinden.com/wp-content/plugins/fansocial/assets/new-profile/profilePage.css" />
+
+    <!-- my custom tehcyons -->
+    <link rel="stylesheet" href="./customTechyons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        rel="stylesheet">
+    <title>Feed</title>
+    <style>
+        /* Text shadow class */
+        .text--sh--10 {
+            text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.10);
+        }
+
+        /* Width of 324px converted to rem */
+        .w--324 {
+            width: 21.6rem;
+        }
+
+        /* Height of 324px converted to rem */
+        .h--324 {
+            height: 21.6rem;
+        }
+
+        /* Height of 22px converted to rem */
+        .h--22 {
+            height: 1.375rem;
+        }
+
+        /* empty div show*/
+        .db--imp {
+            display: block !important;
+        }
+
+        /* Gradient overlay for images */
+        .gradient--image {
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, black 100%);
+        }
+
+        /* Poppins font family */
+        .font--poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .lh--14 {
+            line-height: 14px;
+        }
+
+        .b--iron-grey {
+            border-color: var(--color-iron-gray)
+        }
+
+        .h--10 {
+            height: 10px
+        }
+
+        .of--cover {
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body class="bg-dark-gray pa0 ma0 font--poppins">
+    <div class="gap--32 flex flex-wrap justify-center pa4 min-vh-100 bg-black-30 bg--blur--200 ">
+        <div class="relative w--324 h--324 flex flex-column justify-between items-end">
+            <img src="./imgs/man.jpeg" class="w-100 h-100 contain" />
+            <div class="w-100 h--324 gradient--image flex flex-column justify-between absolute">
+                <div class="flex items-start pa2 f6 fw5 line-height-18 gap--6  pad--24 gap--4">
+                    <p class="fs--32 col--iron-grey fw5 lh--24">
+                        30
+                    </p>
+                    <p class="fs--14 col--iron-grey fw5 lh--14">TH</p>
+                </div>
+                <div class="self-start pa3">
+                    <p class="ma0 text--sh--10 fw5  col--iron-grey fs--16 mb2">
+                        Jenny is back! Tonight I will eat mostly fruits.-> 8pm EST time👅!
+                    </p>
+                    <div class="flex items-center gap--16">
+                        <div class="flex items-center gap--8">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.4932 5.13581C10.4938 2.7984 7.15975 2.16964 4.65469 4.31001C2.14964 6.45038 1.79697 10.029 3.7642 12.5604C5.39982 14.6651 10.3498 19.1041 11.9721 20.5408C12.1536 20.7016 12.2444 20.7819 12.3502 20.8135C12.4426 20.8411 12.5437 20.8411 12.6361 20.8135C12.7419 20.7819 12.8327 20.7016 13.0142 20.5408C14.6365 19.1041 19.5865 14.6651 21.2221 12.5604C23.1893 10.029 22.8797 6.42787 20.3316 4.31001C17.7835 2.19216 14.4925 2.7984 12.4932 5.13581Z"
+                                    stroke="#E7E5E4" stroke-width="1.25" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <p class="fs--12 col--iron-grey ">205</p>
+                        </div>
+                        <div class="flex items-center gap--8">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.5 8.5H12.5M7.5 12H15.5M7.5 18V20.3355C7.5 20.8684 7.5 21.1348 7.60923 21.2716C7.70422 21.3906 7.84827 21.4599 8.00054 21.4597C8.17563 21.4595 8.38367 21.2931 8.79976 20.9602L11.1852 19.0518C11.6725 18.662 11.9162 18.4671 12.1875 18.3285C12.4282 18.2055 12.6844 18.1156 12.9492 18.0613C13.2477 18 13.5597 18 14.1837 18H16.7C18.3802 18 19.2202 18 19.862 17.673C20.4265 17.3854 20.8854 16.9265 21.173 16.362C21.5 15.7202 21.5 14.8802 21.5 13.2V7.8C21.5 6.11984 21.5 5.27976 21.173 4.63803C20.8854 4.07354 20.4265 3.6146 19.862 3.32698C19.2202 3 18.3802 3 16.7 3H8.3C6.61984 3 5.77976 3 5.13803 3.32698C4.57354 3.6146 4.1146 4.07354 3.82698 4.63803C3.5 5.27976 3.5 6.11984 3.5 7.8V14C3.5 14.93 3.5 15.395 3.60222 15.7765C3.87962 16.8117 4.68827 17.6204 5.72354 17.8978C6.10504 18 6.57003 18 7.5 18Z"
+                                    stroke="#E7E5E4" stroke-width="1.25" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                            <p class="fs--12 col--iron-grey ">40</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative w--324 h--324 flex flex-column justify-between items-end">
+            <img src="./imgs/man.jpeg" class="w-100 h-100 contain" />
+            <div class="w-100 h--324 gradient--image flex flex-column justify-between absolute">
+                <div class="flex items-start pa2 f6 fw5 line-height-18 gap--6  pad--24 gap--4">
+                    <p class="fs--32 col--iron-grey fw5 lh--24">
+                        30
+                    </p>
+                    <p class="fs--14 col--iron-grey fw5 lh--14">TH</p>
+                </div>
+                <div class="self-start pa3">
+                    <p class="ma0 text--sh--10 fw5  col--iron-grey fs--16 mb2">
+                        Jenny is back! Tonight I will eat mostly fruits.-> 8pm EST time👅!
+                    </p>
+                    <div class="flex items-center gap--16">
+                        <div class="flex items-center gap--8">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d_8680_12519)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.4932 5.13581C10.4938 2.7984 7.15975 2.16964 4.65469 4.31001C2.14964 6.45038 1.79697 10.029 3.7642 12.5604C5.39982 14.6651 10.3498 19.1041 11.9721 20.5408C12.1536 20.7016 12.2444 20.7819 12.3502 20.8135C12.4426 20.8411 12.5437 20.8411 12.6361 20.8135C12.7419 20.7819 12.8327 20.7016 13.0142 20.5408C14.6365 19.1041 19.5865 14.6651 21.2221 12.5604C23.1893 10.029 22.8797 6.42787 20.3316 4.31001C17.7835 2.19216 14.4925 2.7984 12.4932 5.13581Z"
+                                        fill="#9FFF02" />
+                                </g>
+                                <defs>
+                                    <filter id="filter0_d_8680_12519" x="0.5" y="0" width="24" height="24"
+                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feMorphology radius="34" operator="erode" in="SourceAlpha"
+                                            result="effect1_dropShadow_8680_12519" />
+                                        <feOffset />
+                                        <feGaussianBlur stdDeviation="5" />
+                                        <feComposite in2="hardAlpha" operator="out" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_8680_12519" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_8680_12519"
+                                            result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+
+                            <p class="fs--12 col--iron-grey ">205</p>
+                        </div>
+                        <div class="flex items-center gap--8">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.5 8.5H12.5M7.5 12H15.5M7.5 18V20.3355C7.5 20.8684 7.5 21.1348 7.60923 21.2716C7.70422 21.3906 7.84827 21.4599 8.00054 21.4597C8.17563 21.4595 8.38367 21.2931 8.79976 20.9602L11.1852 19.0518C11.6725 18.662 11.9162 18.4671 12.1875 18.3285C12.4282 18.2055 12.6844 18.1156 12.9492 18.0613C13.2477 18 13.5597 18 14.1837 18H16.7C18.3802 18 19.2202 18 19.862 17.673C20.4265 17.3854 20.8854 16.9265 21.173 16.362C21.5 15.7202 21.5 14.8802 21.5 13.2V7.8C21.5 6.11984 21.5 5.27976 21.173 4.63803C20.8854 4.07354 20.4265 3.6146 19.862 3.32698C19.2202 3 18.3802 3 16.7 3H8.3C6.61984 3 5.77976 3 5.13803 3.32698C4.57354 3.6146 4.1146 4.07354 3.82698 4.63803C3.5 5.27976 3.5 6.11984 3.5 7.8V14C3.5 14.93 3.5 15.395 3.60222 15.7765C3.87962 16.8117 4.68827 17.6204 5.72354 17.8978C6.10504 18 6.57003 18 7.5 18Z"
+                                    stroke="#E7E5E4" stroke-width="1.25" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                            <p class="fs--12 col--iron-grey ">40</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative w--324 h--324 flex flex-column justify-between items-end">
+            <img src="./imgs/2.webp" class="w-100 h-100 of--cover" />
+            <div class="w-100 h--324 gradient--image flex flex-column justify-between absolute">
+                <div class="flex items-start pa2 f6 fw5 line-height-18 gap--6  pad--24 gap--4">
+                    <p class="fs--32 col--iron-grey fw5 lh--24">
+                        30
+                    </p>
+                    <p class="fs--14 col--iron-grey fw5 lh--14">TH</p>
+                </div>
+                <div class="self-start pa3">
+                    <p class="ma0 text--sh--10 fw5 col--iron-grey fs--16 mb2">
+                        What Should I eat for tonight’s live stream?
+                    </p>
+                    <div class=" w-100 mb3">
+                        <div class="flex items-center justify-between col--iron-grey fs--12 mb2">
+                            <p class="col--iron-grey fs--12">Orange</p>
+                            <p class="col--iron-grey fs--12">70% (25 vote)</p>
+                        </div>
+                        <div class="w-100 ba b--iron-grey h--10">
+                            <div class="bg--col--iron-grey w-75 h-100 db--imp"></div>
+                        </div>
+                    </div>
+                    <div class=" w-100 mb3">
+                        <div class="flex items-center justify-between col--iron-grey fs--12 mb2">
+                            <p class="col--iron-grey fs--12">Orange</p>
+                            <p class="col--iron-grey fs--12">70% (25 vote)</p>
+                        </div>
+                        <div class="w-100 ba b--iron-grey h--10">
+                            <div class="bg--col--iron-grey w-75 h-100 db--imp"></div>
+                        </div>
+                    </div>
+                    <div class=" w-100 mb3">
+                        <div class="flex items-center justify-between col--iron-grey fs--12 mb2">
+                            <p class="col--iron-grey fs--12">Orange</p>
+                            <p class="col--iron-grey fs--12">70% (25 vote)</p>
+                        </div>
+                        <div class="w-100 ba b--iron-grey h--10">
+                            <div class="bg--col--iron-grey w-75 h-100 db--imp"></div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap--16 mb3">
+                        <div class="flex items-center gap--8 ">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17 2.85938C16.4477 2.85938 16 3.30709 16 3.85938V20.8594H14.5V9.85938C14.5 9.30709 14.0523 8.85938 13.5 8.85938H10.5C9.94771 8.85938 9.5 9.30709 9.5 9.85938V20.8594H8V14.8594C8 14.3071 7.55228 13.8594 7 13.8594H4C3.44772 13.8594 3 14.3071 3 14.8594V20.8594H2C1.44772 20.8594 1 21.3071 1 21.8594C1 22.4117 1.44772 22.8594 2 22.8594H22C22.5523 22.8594 23 22.4117 23 21.8594C23 21.3071 22.5523 20.8594 22 20.8594H21V3.85938C21 3.30709 20.5523 2.85938 20 2.85938H17Z"
+                                    fill="#E7E5E4" />
+                            </svg>
+
+
+                            <p class="fs--12 col--iron-grey ">400 votes</p>
+                            <p class="fs--12 col--iron-grey ">.</p>
+                            <p class="fs--12 col--iron-grey ">24 hours left to vote</p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative w--324 h--324 flex flex-column justify-between items-end">
+            <!-- <img src="./imgs/2.webp" class="w-100 h-100 of--cover" /> -->
+            <div class="w-100 h--324 gradient--image flex flex-column justify-between absolute">
+                <div class="flex items-start pa2 f6 fw5 line-height-18 gap--6  pad--24 gap--4">
+                    <p class="fs--32 col--iron-grey fw5 lh--24">
+                        30
+                    </p>
+                    <p class="fs--14 col--iron-grey fw5 lh--14">TH</p>
+                </div>
+                <div class="self-start pa3">
+                    <p class="ma0 text--sh--10 fw5 col--iron-grey fs--16 mb2">
+                        What Should I eat for tonight’s live stream?
+                    </p>
+                    <div class=" w-100 mb3">
+                        <div class="flex items-center justify-between col--iron-grey fs--12 mb2">
+                            <p class="col--iron-grey fs--12">Orange</p>
+                            <p class="col--iron-grey fs--12 flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17"
+                                    class="mr2" fill="none">
+                                    <g clip-path="url(#clip0_8690_12551)">
+                                        <path
+                                            d="M14.6668 8.24978V8.86311C14.666 10.3007 14.2005 11.6996 13.3397 12.851C12.4789 14.0024 11.269 14.8448 9.8904 15.2524C8.51178 15.66 7.03834 15.611 5.68981 15.1128C4.34128 14.6146 3.18993 13.6938 2.40747 12.4878C1.62501 11.2818 1.25336 9.85515 1.34795 8.42065C1.44254 6.98615 1.9983 5.62066 2.93235 4.52782C3.8664 3.43499 5.12869 2.67336 6.53096 2.35654C7.93323 2.03972 9.40034 2.18467 10.7135 2.76978M14.6668 3.52596L8.00016 10.1993L6.00016 8.19929"
+                                            stroke="#9FFF02" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_8690_12551">
+                                            <rect width="16" height="16" fill="white"
+                                                transform="translate(0 0.859375)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                                70% (25 vote)
+                            </p>
+                        </div>
+                        <div class="w-100 ba b--iron-grey h--10">
+                            <div class="bg--col--iron-grey w-75 h-100 db--imp"></div>
+                        </div>
+                    </div>
+                    <div class=" w-100 mb3">
+                        <div class="flex items-center justify-between col--iron-grey fs--12 mb2">
+                            <p class="col--iron-grey fs--12">Orange</p>
+                            <p class="col--iron-grey fs--12">70% (25 vote)</p>
+                        </div>
+                        <div class="w-100 ba b--iron-grey h--10">
+                            <div class="bg--col--iron-grey w-75 h-100 db--imp"></div>
+                        </div>
+                    </div>
+                    <div class=" w-100 mb3">
+                        <div class="flex items-center justify-between col--iron-grey fs--12 mb2">
+                            <p class="col--iron-grey fs--12">Orange</p>
+                            <p class="col--iron-grey fs--12">70% (25 vote)</p>
+                        </div>
+                        <div class="w-100 ba b--iron-grey h--10">
+                            <div class="bg--col--iron-grey w-75 h-100 db--imp"></div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap--16 mb3">
+                        <div class="flex items-center gap--8 ">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17 2.85938C16.4477 2.85938 16 3.30709 16 3.85938V20.8594H14.5V9.85938C14.5 9.30709 14.0523 8.85938 13.5 8.85938H10.5C9.94771 8.85938 9.5 9.30709 9.5 9.85938V20.8594H8V14.8594C8 14.3071 7.55228 13.8594 7 13.8594H4C3.44772 13.8594 3 14.3071 3 14.8594V20.8594H2C1.44772 20.8594 1 21.3071 1 21.8594C1 22.4117 1.44772 22.8594 2 22.8594H22C22.5523 22.8594 23 22.4117 23 21.8594C23 21.3071 22.5523 20.8594 22 20.8594H21V3.85938C21 3.30709 20.5523 2.85938 20 2.85938H17Z"
+                                    fill="#E7E5E4" />
+                            </svg>
+
+
+                            <p class="fs--12 col--iron-grey ">400 votes</p>
+                            <p class="fs--12 col--iron-grey ">.</p>
+                            <p class="fs--12 col--iron-grey ">24 hours left to vote</p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
