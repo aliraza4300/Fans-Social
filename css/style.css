@@ -1,0 +1,153 @@
+*{padding:0;margin: 0;box-sizing: border-box;}
+:root {
+    --_blur: 0;
+    /* transition: all ease-in-out 1s; */
+    border:none
+
+}
+body {
+    height: 350vh;
+}
+header {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #235842;
+    transform: translateY(-50px);
+    transition: transform .3s;
+}
+nav ul li {
+    display: inline-block;
+    color: #fff;
+    padding: 1rem;
+    margin: 0 auto;
+}
+#banner {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    text-transform: uppercase;
+    color: #fff;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    padding-right: 2rem;
+    place-items: center;
+    transition: all ease-in-out 1s;
+    position: relative;
+}
+
+
+
+
+#banner h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+.placeholder-box {
+    width: 100%;
+    height: 100%;
+    grid-row: 1/3;
+    grid-column: 1/1;
+    padding: 2rem;
+    text-align: left;
+}
+.btn-box {
+    max-width: 50%;
+    position: absolute;
+    bottom: 5rem;
+}
+button {
+    border: none;
+    background: var(--_btn-color);
+    padding: 1rem;
+    border-radius: 4px;
+    margin-inline: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+.overlay {
+    opacity: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    transition: opacity .8s;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+p {
+    padding-inline: 2rem;
+    font-size: 1rem;
+    margin-block: 1rem;
+    color: #fff;
+}
+.blur{
+    width: 110%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 110vh;
+    z-index: -1;
+    
+}
+/* SET MAIN SLIDER (BACKGROUND IMG) POSITION */
+#main-slider .splide__slide img {
+    width: 94% !important; /* If change size, make sure it's bigger than the section size */
+    height: 100% !important; /* If change size, make sure it's bigger than the section size */
+    object-fit: fill;
+    object-position: center center;
+    filter: blur(var(--_blur)); /* make image blur */
+
+    /* this fix the shadows */
+    /* margin-top: -10%; */
+    /* margin-left: -5%; */
+}
+/* SET SLIDER POSITION AND SOME ADJUSTMENTS */
+#thumbnail-slider {
+    margin-right: 10%;
+    width: 100%;
+    grid-column: 2/2;
+    grid-row: 2/2;
+    transition: opacity .8s;
+}
+/* SET SLIDER STRETCH // TRACK SIDE */
+#thumbnail-slider .splide__track {
+    width: 40%;
+    margin-left: auto; /* Pull slider to right side */
+}
+
+/* SET SLIDE/IMAGE ATTRIBUTES */
+#thumbnail-slider .splide__slide{
+    position: relative;
+    width: 20% !important;
+    height: 100px;
+    transform: scaleY(70%) !important;
+    transition: transform .2s;
+    opacity: 0.5;
+    z-index: -2;
+}
+
+/* MAKE ACTIVE SIDE IMAGES A BIT SMALLER */
+#thumbnail-slider .splide__slide.is-prev,#thumbnail-slider .splide__slide.is-next {
+    position: relative;
+    width: 20% !important;
+    transform: scaleY(90%) !important;
+    z-index: -1;
+}
+/* MAKE ACTIVE SLIDE BIGGER (NORMAL SIZE) */
+#thumbnail-slider .splide__slide.is-active {
+    opacity: 1;
+    width: 40% !important;
+    transform: scale(100%, 100%) !important;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    z-index: 1;
+}
+#content {
+    opacity: 0.5;
+    transition: opacity .8s;
+}
