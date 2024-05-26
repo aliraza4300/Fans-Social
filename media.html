@@ -69,14 +69,8 @@
             object-fit: cover;
         }
 
-        .splide__slide img {
-            width: 100%;
-            height: auto;
+        .ma--auto {
             margin: auto;
-        }
-
-        .splide__slide {
-            position: relative;
         }
 
         .splide__slide .overlay {
@@ -92,14 +86,14 @@
         .splide__arrow {
             background: transparent;
             border: none;
-            color: limegreen;
-            border: 1px solid limegreen;
+            color: var(--col--light-warm-green);
+            border: 1px solid var(--col--light-warm-green);
             border-radius: 0;
             height: 48px;
             width: 48px;
         }
 
-        .splide__arrow_big {
+        .elm_GqloCG {
             background: transparent;
             border: none;
             color: limegreen;
@@ -194,15 +188,25 @@
         .fs--16 {
             font-size: 16px
         }
+
+        .m--157 {
+            width: 9.813rem
+                /* 157px */
+        }
+
+        .h--400 {
+            height: 25rem;
+            /* 400px*/
+        }
     </style>
 </head>
 
 <body style="background: rgba(0, 0, 0, 0.50);">
-    <div id="splide" class="splide">
+    <div id="event_slider" class="splide">
         <div class="splide__track">
             <ul class="splide__list">
-                <li class="splide__slide">
-                    <img src="./imgs/2.webp" alt="Slide 2" style="height:400px">
+                <li class="splide__slide relative">
+                    <img src="./imgs/2.webp" alt="Slide 2" class="w---100 h--400 ma--auto">
                     <div class="overlay ">
                         <div class="flex flex-column justify-between h-100">
                             <p
@@ -215,7 +219,7 @@
                                 <p class="fs--16 fw5 col--iron-grey mb3">In part II of detective Jenny series Jenny will
                                     find out who eat her cake without asking.</p>
                                 <button
-                                    class="col--light-warm-green fw5 fs--16 flex items-center gap--4 ba b--light-warm-green mw4 pa2">
+                                    class="col--light-warm-green fw5 fs--16 flex items-center gap--4 ba b--light-warm-green m--157 pa2">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none">
                                         <path
@@ -227,8 +231,8 @@
                         </div>
                     </div>
                 </li>
-                <li class="splide__slide">
-                    <img src="./imgs/1.webp" alt="Slide 2" style="height:400px">
+                <li class="splide__slide relative">
+                    <img src="./imgs/1.webp" alt="Slide 2" class="w---100 h--400 ma--auto">
                     <div class="overlay ">
                         <div class="flex flex-column justify-between h-100">
                             <p
@@ -241,7 +245,7 @@
                                 <p class="fs--16 fw5 col--iron-grey mb3">In part II of detective Jenny series Jenny will
                                     find out who eat her cake without asking.</p>
                                 <button
-                                    class="col--light-warm-green fw5 fs--16 flex items-center gap--4 ba b--light-warm-green mw4 pa2">
+                                    class="col--light-warm-green fw5 fs--16 flex items-center gap--4 ba b--light-warm-green m--157 pa2">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none">
                                         <path
@@ -255,16 +259,16 @@
                 </li>
             </ul>
             <div class="splide__arrows splide__arrows--ltr">
-                <button id="prevButton" class="splide__arrow_big splide__arrow--prev" type="button"
-                    aria-label="Previous slide" aria-controls="splide01-track">
+                <button id="prevButton" class="elm_GqloCG splide__arrow--prev" type="button" aria-label="Previous slide"
+                    aria-controls="splide01-track">
                     <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M20 24.5L12 16.5L20 8.5" stroke="#9FFF02" stroke-width="2.5" stroke-linecap="round"
                             stroke-linejoin="round" />
                     </svg>
                     </svg>
                 </button>
-                <button id="nextButton" class="splide__arrow_big splide__arrow--next" type="button"
-                    aria-label="Next slide" aria-controls="splide01-track">
+                <button id="nextButton" class="elm_GqloCG splide__arrow--next" type="button" aria-label="Next slide"
+                    aria-controls="splide01-track">
                     <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 24.5L20 16.5L12 8.5" stroke="#9FFF02" stroke-width="2.5" stroke-linecap="round"
                             stroke-linejoin="round" />
@@ -494,12 +498,12 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.11/dist/js/splide.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            var splideMain = new Splide('#splide', {
+            var splideMain = new Splide('#event_slider', {
                 type: 'loop',
                 perPage: 1,
                 focus: 'center',
                 gap: '2%',
-                padding: { left: '4%', right: '4%' },
+                padding: { left: '3%', right: '3%' },
                 arrows: false,
                 pagination: true,
             }).mount();

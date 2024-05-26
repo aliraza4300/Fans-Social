@@ -21,6 +21,16 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.11/dist/css/splide.min.css">
+    <!-- popup-stylesheet & script -->
+    <link rel="stylesheet" href="https://fs.codelinden.com/wp-content/plugins/fansocial/assets/css/dev/popup.css">
+    <script src="https://fs.codelinden.com/wp-content/plugins/fansocial/assets/FINAL/js/popup.js"></script>
+    <script src="https://fs.codelinden.com/wp-content/plugins/fansocial/assets/FINAL/js/main.js?ver=1.0" id="main-js">
+    </script>
+    <!-- nhs global custom style -->
+    <link rel="stylesheet"
+        href=" https://fs.codelinden.com/wp-content/plugins/fansocial/assets/css/dev/customTachyonsStylesheet.css?ver=6.4.3 ">
+
+
     <style>
         .text--sh--10 {
             text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.10);
@@ -334,7 +344,7 @@
         class="f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa3 ba border-box mr4">
         <span class="pl1">Open Popup</span>
     </a>
-    <div id="myModal" class="modal">
+    <!-- <div id="myModal" class="modal">
         <div class="modal-content bg--light-pink pad--24">
             <div class="flex items-center justify-between mb3">
                 <div class="flex items-center">
@@ -462,6 +472,150 @@
                 <span class="ml2 fs--12 fw6 col--pink-4">Request decline order</span>
             </a>
         </div>
+    </div> -->
+    <button onclick="open_popup({'target': '#in-progress'});">Add New</button>
+
+    <!-- add new merch popup -->
+    <div class="elm_UoRWYY items-center justify-center fixed top-0 left-0 w-100 h-100 z-9999 overflow-auto"
+        id="in-progress" data-popup-overlay-color="rgba(0,0,0,0.65)" data-popup-type="allow-permission-popup"
+        data-popup-position="centered">
+        <!-- inner wrapper -->
+        <div class="elm_yNwqwJ top-0 w-100 flex items-center justify-center absolute">
+            <!-- container -->
+            <div style="width: 60rem;"
+                class="elm_ypFNaE bg--light-pink pad--24 elm_qJBugX flex flex-column pt24 pb24 bg-white relative">
+
+                <div class="flex items-center justify-between mb3">
+                    <div class="flex items-center">
+                        <img src="./imgs/youtube-icon.png" alt="YouTube Icon" />
+                        <p class="ml2 fs--16"><span class="fw6">Order</span> #123456</p>
+                    </div>
+                    <div class="flex items-center link gap--16" id="closeBtn">
+                        <p class="col--grey-one fs--14">Last update: Nov 29, 2023</p>
+                        <img src="./imgs/cross-icon.png" width="16" alt="Close Icon" />
+                    </div>
+                </div>
+                <p class="fs--32 fw5 col--iron-pink ma0 mb2">In Progress</p>
+                <p class="fs--14  ma0">This request is not confirmed yet. Once you have reached a mutual
+                    consent on
+                    order
+                    requirements and price with @mangoes, please <span class="fw7">confirm and create order.</span>
+                </p>
+                <div class="flex items-center mt4">
+                    <div class="flex-grow-1 flex flex-column items-center w-100">
+                        <div class="elm_PwFwkp h--12 w-100 db--imp mb2 bg--pink-2"></div>
+                        <p class="tc col--iron-pink ma0 fw5">Processing</p>
+                    </div>
+                    <div class="flex-grow-1 flex flex-column items-center w-100">
+                        <div class="w-100 h--12 bg-white br b--light-gray db--imp mb2"></div>
+                        <p class="tc ma0 col--grey-one fw5">Payment</p>
+                    </div>
+                    <div class="flex-grow-1 flex flex-column items-center w-100">
+                        <div class="w-100 h--12 bg-white br b--light-gray db--imp mb2"></div>
+                        <p class="tc ma0 col--grey-one fw5">Pending Upload</p>
+                    </div>
+                    <div class="flex-grow-1 flex flex-column items-center w-100">
+                        <div class="w-100 h--12 bg-white br b--light-gray db--imp mb2"></div>
+                        <p class="tc ma0 col--grey-one fw5">Reviewing</p>
+                    </div>
+                    <div class="flex-grow-1 flex flex-column items-center w-100">
+                        <div class="elm_CxMZJw w-100 h--12 bg-white br-0 mb2 db--imp"></div>
+                        <p class="tc ma0 col--grey-one">Completed</p>
+                    </div>
+                </div>
+                <div class="br3 bg-white pa4 mt4">
+                    <div class="flex items-center justify-center">
+                        <a href="#" class="w-100 ba br--10 b--pink flex items-center justify-center pa2 mr3">
+                            <img src="./imgs/chat-icon.png" alt="Chat Icon" />
+                            <span class="ml2">Chat with Mangoes</span>
+                        </a>
+                        <a href="#" class="w-100 bg--pink-3 white br--10 pa2 flex items-center justify-center">
+                            <img src="./imgs/dollar-sign.png" class="mr2" alt="Dollar Sign" />
+                            Confirm and create order
+                        </a>
+                    </div>
+                    <div class="mt--28 mb2 flex items-center justify-between">
+                        <div class="w-50">
+                            <p class="col--grey-one ma0 mb2 fw5 fs--12">Title</p>
+                            <p class=" fw5 fs--16 col--grey-two">--</p>
+                        </div>
+                        <div class="w-50">
+
+                            <p class="col--grey-one ma0 mb2 fw5 fs--12 ">Descripition</p>
+                            <p class=" fw5 fs--16 col--grey-two">--</p>
+                        </div>
+                    </div>
+                    <p class="col--grey-one ma0 mb1 fs--12 fw5">Message from fan</p>
+                    <p class="col--grey-two fw5 fs--16 ">Hello this is the product request! Lorem ipsum dolor
+                        sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="mt--24">
+                        <div class="flex items-center justify-between mb--18">
+                            <div class="flex items-center">
+                                <p class="col--grey-one ma0 mb1 fs--12 fw5 w--150">Delivery Options</p>
+                                <p class="ml2 col--grey-two fw5 fs--14 col--grey-two">4 Weeks</p>
+                            </div>
+                            <p class="col--grey-two fw6 fs--16 ">$25</p>
+                        </div>
+                        <div class="flex items-center justify-between mb--18">
+                            <div class="flex items-center">
+                                <p class="col--grey-one ma0 mb1 fs--12 fw5 w--150">Delivery Options</p>
+                                <p class="ml2 col--grey-two fw5 fs--14 col--grey-two">4 Weeks</p>
+                            </div>
+                            <p class="col--grey-two fw6 fs--16 ">$25</p>
+                        </div>
+                        <div class="flex items-center justify-between mb--18">
+                            <div class="flex items-center">
+                                <p class="col--grey-one ma0 mb1 fs--12 fw5 w--150">Delivery Options</p>
+                                <p class="ml2 col--grey-two fw5 fs--14 col--grey-two">4 Weeks</p>
+                            </div>
+                            <p class="col--grey-two fw6 fs--16 ">$25</p>
+                        </div>
+                        <div class="flex items-center justify-between mb--18">
+                            <div class="flex items-center">
+                                <p class="col--grey-one ma0 mb1 fs--12 fw5 w--150">Delivery Options</p>
+                                <p class="ml2 col--grey-two fw5 fs--14 col--grey-two">4 Weeks</p>
+                            </div>
+                            <p class="col--grey-two fw6 fs--16 ">$25</p>
+                        </div>
+                        <div class="flex items-center justify-between mb--18">
+                            <div class="flex items-center">
+                                <p class="col--grey-one ma0 mb1 fs--12 fw5 w--150">Delivery Options</p>
+                                <p class="ml2 col--grey-two fw5 fs--14 col--grey-two">4 Weeks</p>
+                            </div>
+                            <p class="col--grey-two fw6 fs--16 ">$25</p>
+                        </div>
+                    </div>
+                    <div class="divider bg--gray-three mb2 h--1 w-100 db--imp"></div>
+                    <div class="flex items-center justify-between">
+                        <p class="col--grey-two fs--16 fw6">Adjustment</p>
+                        <p class="col--grey-two fw6 fs--16 ">+$5</p>
+                    </div>
+                    <div class="flex items-center justify-between mt2">
+                        <p class="fw6 col--pink-3 fs--20">Total</p>
+                        <p class="fw6 col--pink-3 fs--40">$205</p>
+                    </div>
+                </div>
+                <a href="#" class="ba b--pink-4 br2  flex items-center pa1 mt3 w--182">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                        <g clip-path="url(#clip0_8539_30020)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.81488 3.80315C4.14123 2.47682 5.97548 1.65527 8.00033 1.65527C10.0252 1.65527 11.8594 2.47682 13.1858 3.80316C14.5121 5.12951 15.3337 6.96376 15.3337 8.98861C15.3337 11.0135 14.5121 12.8477 13.1858 14.174C11.8594 15.5004 10.0252 16.3219 8.00033 16.3219C5.97548 16.3219 4.14123 15.5004 2.81487 14.174C1.48854 12.8477 0.666992 11.0135 0.666992 8.98861C0.666992 6.96376 1.48854 5.12951 2.81488 3.80315ZM4.41082 4.18023L12.8087 12.5781C13.5575 11.5769 14.0003 10.3349 14.0003 8.98861C14.0003 7.33159 13.3295 5.8325 12.243 4.74597C11.1564 3.65945 9.65735 2.98861 8.00033 2.98861C6.65405 2.98861 5.41203 3.43143 4.41082 4.18023ZM11.8966 13.5516L3.43733 5.09236C2.54084 6.14109 2.00033 7.50122 2.00033 8.98861C2.00033 10.6456 2.67117 12.1447 3.75768 13.2312C4.84422 14.3178 6.34331 14.9886 8.00033 14.9886C9.48771 14.9886 10.8478 14.4481 11.8966 13.5516Z"
+                                fill="#F24822" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_8539_30020">
+                                <rect width="16" height="16" fill="white" transform="translate(0 0.98877)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <span class="ml2 fs--12 fw6 col--pink-4">Request decline order</span>
+                </a>
+
+
+            </div>
+        </div>
+
     </div>
 
     <script>
